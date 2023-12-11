@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS feeds;
+
+CREATE TABLE feeds(
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NO NULL,
+    description VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
